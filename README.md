@@ -8,3 +8,7 @@ Website for The Growth Room, a transformative life coaching practice. It's a pla
 - `images/`: add `logo.png` and `headshot.jpg` here
 
 See **[SETUP.md](SETUP.md)** for adding photos, connecting your domain and setting up bookings and payments.
+
+## WordPress version
+
+`wordpress-theme/` contains the same design as a WordPress block theme, ready to upload: [`the-growth-room-theme.zip`](wordpress-theme/the-growth-room-theme.zip). See **[wordpress-theme/INSTALL.md](wordpress-theme/INSTALL.md)**.
