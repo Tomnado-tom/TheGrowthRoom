@@ -37,37 +37,38 @@ const CONTACT_EMAIL = "you@yourdomain.com";
 4. Under **Build and deployment**, choose **Source: Deploy from a branch**, **Branch: `main`**, folder **`/ (root)`**, then **Save**.
 5. After a minute the site is live at `https://tomnado-tom.github.io/TheGrowthRoom/`.
 
-## 4. Connect your domain (registered through WordPress.com)
+## 4. Connect thegrowthroom.coach (registered through WordPress.com)
 
-**a) Tell GitHub about the domain**
+**a) GitHub side (already done)**
 
-Settings → Pages → **Custom domain** → enter `www.yourdomain.com` → **Save**. GitHub will add a `CNAME` file to the repo for you.
+The repo contains a `CNAME` file with `thegrowthroom.coach`, which tells GitHub Pages to serve the site on that domain. Check **Settings → Pages → Custom domain** shows `thegrowthroom.coach`; if it's empty, type it in and **Save**.
 
-**b) Point the domain at GitHub (in WordPress.com)**
+**b) DNS records in WordPress.com**
 
-Go to **wordpress.com → Upgrades → Domains → your domain → DNS records** (sometimes shown as *Name servers and DNS → DNS records*). Make sure the domain is using **WordPress.com name servers**, then:
+Go to **wordpress.com → Upgrades → Domains → thegrowthroom.coach → DNS records**. The domain must be using **WordPress.com name servers** (the default). If it's attached to a WordPress site, first set it to point elsewhere / use custom DNS records.
 
-1. **Delete** any existing `A` records for the root (`@`) and any `CNAME` for `www` that point at WordPress.
-2. **Add four `A` records** — Name: `@` (or leave blank):
+1. **Delete** any existing `A` / `AAAA` records for `@` and any `CNAME` record for `www` that point at WordPress.
+2. **Add these records:**
 
-   ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
+   | Type | Name / Host | Value |
+   |---|---|---|
+   | A | `@` (or blank) | `185.199.108.153` |
+   | A | `@` (or blank) | `185.199.109.153` |
+   | A | `@` (or blank) | `185.199.110.153` |
+   | A | `@` (or blank) | `185.199.111.153` |
+   | CNAME | `www` | `tomnado-tom.github.io` |
 
-3. **Add a `CNAME` record** — Name: `www` → Value: `tomnado-tom.github.io`
+   Optional (IPv6) — `AAAA` records for `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`.
 
-> If WordPress won't let you edit the root A records, it's usually because the domain is still attached to a WordPress site. Under the domain's settings, change its destination to "Point to another site" / "Use external DNS records" first, or detach it from the WordPress site.
+3. Leave any `MX` / email `TXT` records alone.
 
 **c) Turn on HTTPS**
 
-DNS can take anywhere from 10 minutes to 24 hours. Once GitHub shows the green "DNS check successful", tick **Enforce HTTPS** on the Pages settings screen.
+DNS can take 10 minutes to 24 hours. When **Settings → Pages** shows "DNS check successful", tick **Enforce HTTPS** (the certificate can take up to an hour to appear). `www.thegrowthroom.coach` will redirect to `thegrowthroom.coach` automatically.
 
-**Optional — verify the domain** (stops anyone else claiming it on GitHub): your GitHub profile → **Settings → Pages → Add a domain**, and add the `TXT` record it gives you in WordPress DNS.
+**d) Optional — verify the domain**
 
-**Email:** if you use email on this domain (e.g. Professional Email / Google Workspace), leave its `MX` and `TXT` records alone — only change the records above.
+Your GitHub profile → **Settings → Pages → Add a domain** → `thegrowthroom.coach`, then add the `TXT` record it shows in WordPress DNS. This stops anyone else using your domain on GitHub.
 
 ## 5. Bookings and payments
 
