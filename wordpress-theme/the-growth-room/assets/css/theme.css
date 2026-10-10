@@ -23,7 +23,7 @@ body { -webkit-font-smoothing: antialiased; }
 	bottom: -4px;
 	width: 0;
 	height: 2px;
-	background: var(--wp--preset--color--terracotta);
+	background: var(--wp--preset--color--primary);
 	transition: width 0.25s;
 }
 .wp-block-navigation .wp-block-navigation-item__content:hover::after { width: 100%; }
@@ -39,8 +39,8 @@ body { -webkit-font-smoothing: antialiased; }
 	box-shadow: var(--wp--preset--shadow--soft);
 }
 .wp-block-button.is-style-outline > .wp-block-button__link:hover {
-	background-color: var(--wp--preset--color--terracotta);
-	border-color: var(--wp--preset--color--terracotta);
+	background-color: var(--wp--preset--color--primary);
+	border-color: var(--wp--preset--color--primary);
 	color: var(--wp--preset--color--white);
 }
 
@@ -53,12 +53,12 @@ body { -webkit-font-smoothing: antialiased; }
 	text-transform: uppercase;
 	margin-bottom: 0.6rem !important;
 }
-.tgr-eyebrow:not(.has-text-color) { color: var(--wp--preset--color--terracotta); }
+.tgr-eyebrow:not(.has-text-color) { color: var(--wp--preset--color--accent-dark); }
 .tgr-eyebrow + .wp-block-heading { margin-top: 0; }
 
 h1 em, h2 em {
 	font-weight: 400;
-	color: var(--wp--preset--color--terracotta);
+	color: var(--wp--preset--color--accent-dark);
 }
 
 /* Hero artwork: soft floating shapes behind the logo */
@@ -67,7 +67,7 @@ h1 em, h2 em {
 	position: relative;
 	aspect-ratio: 1;
 	width: 100%;
-	max-width: 460px;
+	max-width: 480px;
 	margin-inline: auto;
 }
 .tgr-hero-art::before,
@@ -77,10 +77,10 @@ h1 em, h2 em {
 	border-radius: 46% 54% 58% 42% / 44% 40% 60% 56%;
 	animation: tgr-float 14s ease-in-out infinite;
 }
-.tgr-hero-art::before { inset: 4%; background: var(--wp--preset--color--blush); }
+.tgr-hero-art::before { inset: 4%; background: var(--wp--preset--color--peach); }
 .tgr-hero-art::after {
 	inset: 16% 10% 8% 18%;
-	background: var(--wp--preset--color--sage-light);
+	background: var(--wp--preset--color--sky);
 	animation-duration: 18s;
 	animation-delay: -6s;
 }
@@ -102,7 +102,7 @@ h1 em, h2 em {
 	content: "";
 	position: absolute;
 	inset: 7% -6% -6% 7%;
-	background: var(--wp--preset--color--sage-light);
+	background: var(--wp--preset--color--sky);
 	border-radius: 200px 200px 22px 22px;
 }
 .tgr-headshot img {
@@ -143,24 +143,6 @@ ul.tgr-pills li {
 .tgr-card > .wp-block-heading { margin-top: 0; }
 .tgr-card p:last-child { margin-bottom: 0; }
 
-.tgr-icon {
-	width: 54px;
-	height: 54px;
-	border-radius: 16px;
-	display: grid;
-	place-items: center;
-	background: var(--wp--preset--color--blush);
-}
-.tgr-icon--sage-light { background: var(--wp--preset--color--sage-light); }
-.tgr-icon svg {
-	width: 26px;
-	height: 26px;
-	fill: none;
-	stroke: var(--wp--preset--color--terracotta-dark);
-	stroke-width: 1.7;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
 
 /* Session steps */
 .tgr-step {
@@ -168,20 +150,7 @@ ul.tgr-pills li {
 	padding-top: 1.4rem;
 }
 .tgr-step .wp-block-heading { margin: 0.4rem 0 0.6rem; }
-.tgr-step p:last-child { color: #c9c2b8; }
-.tgr-step-num {
-	font-family: var(--wp--preset--font-family--heading);
-	font-size: 2.6rem;
-	line-height: 1;
-	margin: 0;
-}
-.tgr-details {
-	background: rgba(248, 242, 234, 0.07);
-	border-radius: 22px;
-	padding: 1.8rem;
-}
-.tgr-details p { margin: 0; }
-.tgr-details .tgr-label { margin-bottom: 0.2rem !important; }
+.tgr-step p:last-child { color: #c9d3e3; }
 
 /* Pricing */
 .tgr-price { position: relative; padding: 2.4rem 2rem; }
@@ -190,7 +159,7 @@ ul.tgr-pills li {
 .tgr-price-amount {
 	font-family: var(--wp--preset--font-family--heading);
 	font-size: 2.2rem;
-	color: var(--wp--preset--color--forest);
+	color: var(--wp--preset--color--navy);
 	line-height: 1.2;
 	margin: 0;
 }
@@ -205,7 +174,7 @@ ul.tgr-pills li {
 	top: -14px;
 	left: 2rem;
 	margin: 0 !important;
-	background: var(--wp--preset--color--terracotta);
+	background: var(--wp--preset--color--accent-dark);
 	color: var(--wp--preset--color--white);
 	font-size: 0.78rem;
 	font-weight: 600;
@@ -215,12 +184,51 @@ ul.tgr-pills li {
 	border-radius: 999px;
 }
 
+/* Header logo */
+.tgr-header .wp-block-site-logo img { height: auto; }
+
+/* About */
+@media (min-width: 782px) {
+	.tgr-about-photo { position: sticky; top: 120px; align-self: flex-start; }
+}
+.tgr-signoff {
+	font-family: var(--wp--preset--font-family--heading);
+	font-style: italic;
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.4;
+	color: var(--wp--preset--color--navy);
+	margin-top: 2rem !important;
+}
+
+/* Coaching pull quote */
+.tgr-quote { margin-top: 2rem !important; padding: 2.2rem 2rem; height: auto; }
+.tgr-quote p {
+	font-family: var(--wp--preset--font-family--heading);
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.4;
+	color: var(--wp--preset--color--navy);
+	margin: 0;
+}
+.tgr-coaching-text { padding-top: 2.4rem; }
+
+/* What to Expect closing line */
+.tgr-closing {
+	font-family: var(--wp--preset--font-family--heading);
+	font-style: italic;
+	font-size: var(--wp--preset--font-size--x-large);
+	line-height: 1.45;
+	max-width: 760px;
+	margin-inline: auto !important;
+}
+.tgr-session .has-large-font-size { max-width: 760px; margin-inline: auto !important; }
+
 /* Booking */
 .tgr-booking { padding: 3rem 2rem; max-width: 1000px; margin-inline: auto !important; }
 .tgr-booking iframe { width: 100%; min-height: 760px; border: 0; }
 
 /* Phones and tablets */
 @media (max-width: 781px) {
+	.tgr-coaching-text { padding-top: 0; }
 	.tgr-hero .wp-block-columns { flex-direction: column-reverse; }
 	.tgr-hero-art { max-width: 300px; }
 	.tgr-price.is-featured { transform: none; }
@@ -231,10 +239,8 @@ ul.tgr-pills li {
 	.tgr-header .wp-block-site-title { font-size: 1.2rem; white-space: nowrap; }
 }
 @media (min-width: 600px) and (max-width: 781px) {
-	.tgr-cards, .tgr-steps, .tgr-details { flex-wrap: wrap !important; }
-	.tgr-cards > .wp-block-column,
-	.tgr-steps > .wp-block-column,
-	.tgr-details > .wp-block-column { flex-basis: calc(50% - 1rem) !important; }
+	.tgr-steps { flex-wrap: wrap !important; }
+	.tgr-steps > .wp-block-column { flex-basis: 100% !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -15,20 +15,22 @@ On **WordPress.com**, uploading your own theme needs the **Business** plan or hi
 
 The theme includes its own home page template, so your home page changes straight away.
 
-## 3. Add your logo
+## 3. Logo and headshot
 
-**Appearance → Editor → Styles/Site** (or click the logo spot in the header) → select the **Site Logo** block → **Add a site logo** → upload your logo. It appears in the header, the hero and the footer automatically.
+Both are already built in. The Growth Room logo shows on the live site straight away, and the headshot is in the About Me section.
+
+Inside the editor the logo spots may show an empty "Site Logo" box until a logo is uploaded there. To make it show in the editor too (and to swap it later), click the **Site Logo** block in the header → **Add a site logo** → upload the logo file.
 
 ## 4. Edit the home page
 
 **Appearance → Editor → Pages/Templates → Homepage** (the "Front Page" template). Click any text to change it. Things to update:
 
-- **About Me:** click the placeholder headshot → **Replace** → upload your photo. Then change `[Your Name]`, your story and the three credential pills.
-- **Pricing:** change `$[XX]` and `$[XXX]`.
+- **Pricing:** change `£[XX]` and `£[XXX]`, and check the session lengths (20 min / 60 min).
+- **Photo:** to change it later, click the headshot → **Replace**.
 - **Email address:** the booking and contact sections use `hello@thegrowthroom.coach`. Select the link/button and change it if your address is different. (That mailbox must exist — see email note below.)
 - Click **Save** (top right) when done.
 
-Sections are listed in the **List View** (the ☰ icon top left) as *About Me*, *Transformative Coaching*, *What to Expect*, *Pricing*, *Booking* and *Contact*, so they're easy to find, reorder or delete.
+Sections are listed in the **List View** (the ☰ icon top left) as *About Me*, *What is Transformative Coaching?*, *What to Expect*, *Pricing*, *Booking* and *Contact*, so they're easy to find, reorder or delete.
 
 ## 5. Add booking + payments (Calendly)
 

@@ -39,8 +39,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"tgr-card tgr-price is-featured","backgroundColor":"blush","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"top"}} -->
-<div class="wp-block-group tgr-card tgr-price is-featured has-blush-background-color has-background"><!-- wp:paragraph {"className":"tgr-badge"} -->
+<div class="wp-block-column"><!-- wp:group {"className":"tgr-card tgr-price is-featured","backgroundColor":"peach","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"top"}} -->
+<div class="wp-block-group tgr-card tgr-price is-featured has-peach-background-color has-background"><!-- wp:paragraph {"className":"tgr-badge"} -->
 <p class="tgr-badge">Most popular</p>
 <!-- /wp:paragraph -->
 
@@ -49,11 +49,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"tgr-price-amount"} -->
-<p class="tgr-price-amount">$[XX] <span>/ 60 min</span></p>
+<p class="tgr-price-amount">£[XX] <span>/ 60 min</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">A focused one-to-one session to work through what matters most right now.</p>
+<p class="has-muted-color has-text-color">One confidential session, shaped around whatever’s present for you that day.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"tgr-push-down"} -->
@@ -71,11 +71,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"tgr-price-amount"} -->
-<p class="tgr-price-amount">$[XXX] <span>/ 6 sessions</span></p>
+<p class="tgr-price-amount">£[XXX] <span>/ 6 sessions</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">Ongoing support over 3 months, with email check-ins between sessions.</p>
+<p class="has-muted-color has-text-color">Six sessions for deeper work — and change that actually sticks.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"tgr-push-down"} -->

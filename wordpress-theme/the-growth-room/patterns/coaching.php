@@ -1,91 +1,41 @@
 <?php
 /**
- * Title: Transformative Coaching
+ * Title: What is Transformative Coaching?
  * Slug: the-growth-room/coaching
- * Categories: the-growth-room, services
- * Description: What transformative coaching is, with four benefit cards.
+ * Categories: the-growth-room, text
+ * Description: Explains transformative coaching, with a pull quote.
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Transformative Coaching"},"anchor":"coaching","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-<section id="coaching" class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:paragraph {"align":"center","className":"tgr-eyebrow"} -->
-<p class="has-text-align-center tgr-eyebrow">Transformative Coaching</p>
+<!-- wp:group {"tagName":"section","metadata":{"name":"What is Transformative Coaching?"},"anchor":"coaching","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+<section id="coaching" class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"tgr-eyebrow"} -->
+<p class="tgr-eyebrow">Transformative Coaching</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Not just new goals — a new way of seeing yourself.</h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What is transformative coaching?</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center","textColor":"muted","fontSize":"large"} -->
-<p class="has-text-align-center has-muted-color has-text-color has-large-font-size">Transformative coaching goes beyond to-do lists. We look at the beliefs, patterns and stories that shape your choices, so the changes you make are the kind that last.</p>
+<!-- wp:group {"className":"tgr-card tgr-quote","backgroundColor":"peach","layout":{"type":"default"}} -->
+<div class="wp-block-group tgr-card tgr-quote has-peach-background-color has-background"><!-- wp:paragraph -->
+<p>“I think of coaching less as ‘expert with answers’ and more as companionship through the messy, complicated bits of life.”</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"60%","className":"tgr-coaching-text"} -->
+<div class="wp-block-column tgr-coaching-text" style="flex-basis:60%"><!-- wp:paragraph {"fontSize":"large","textColor":"navy"} -->
+<p class="has-navy-color has-text-color has-large-font-size">Transformative coaching is a bit different from the coaching you might be picturing. It’s not really about “how do I achieve more” — it’s more about “who am I, really, and how do I make sense of my life?”</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:columns {"align":"wide","className":"tgr-cards","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-columns alignwide tgr-cards" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"tgr-card","backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group tgr-card has-white-background-color has-background"><!-- wp:html -->
-<div class="tgr-icon tgr-icon--blush" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c0-6 4-10 9-11-1 6-4 10-9 11Zm0 0C12 16 8 12 3 11c1 6 4 10 9 11Zm0 0V8m0 0c0-3 2-5 4-6m-4 6c0-3-2-5-4-6"/></svg></div>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>Instead of just looking at what you’re doing, we look at what’s underneath it — the beliefs, assumptions, and patterns that quietly shape your decisions, your relationships, and the goals you set in the first place. It’s not about a quick fix. It’s about change that actually sticks, because it happens at the level of who you are, not just what you do.</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Clarity</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">Untangle the noise and reconnect with what you truly want — not what you think you <em>should</em> want.</p>
+<!-- wp:paragraph -->
+<p>It’s whole-person work too — not just your career or your to-do list, but how you feel, how you carry things in your body, your relationships, and your sense of what it’s all for. Honestly, I think of coaching less as “expert with answers” and more as companionship through the messy, complicated bits of life. It’s a profoundly human thing to do together.</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"tgr-card","backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group tgr-card has-white-background-color has-background"><!-- wp:html -->
-<div class="tgr-icon tgr-icon--sage-light" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 8-8M4 4v4h4M12 8v4l3 2"/></svg></div>
-<!-- /wp:html -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Mindset</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">Notice the patterns that keep you stuck and gently rewrite the stories that no longer serve you.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"tgr-card","backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group tgr-card has-white-background-color has-background"><!-- wp:html -->
-<div class="tgr-icon tgr-icon--blush" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16l4-5 3 3 5-7M15 7h3v3"/></svg></div>
-<!-- /wp:html -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Action</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">Turn insight into small, doable steps — with accountability and support between sessions.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"tgr-card","backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group tgr-card has-white-background-color has-background"><!-- wp:html -->
-<div class="tgr-icon tgr-icon--sage-light" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg></div>
-<!-- /wp:html -->
-
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Wellbeing</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"muted"} -->
-<p class="has-muted-color has-text-color">Grow in a way that feels sustainable, with more confidence, calm and self-compassion along the way.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:paragraph {"align":"center","textColor":"muted","fontSize":"small","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
-<p class="has-text-align-center has-muted-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--60)">Coaching is a great fit if you’re navigating a transition, feeling stuck, rebuilding confidence, or ready for “what’s next.” It isn’t a substitute for therapy or medical care.</p>
-<!-- /wp:paragraph --></section>
+<!-- /wp:columns --></section>
 <!-- /wp:group -->

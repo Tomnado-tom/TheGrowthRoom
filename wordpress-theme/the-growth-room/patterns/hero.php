@@ -18,7 +18,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"muted","fontSize":"large"} -->
-<p class="has-muted-color has-text-color has-large-font-size">A warm, judgement-free space to slow down, get clear on what matters, and take real steps forward — at your own pace, with someone in your corner.</p>
+<p class="has-muted-color has-text-color has-large-font-size">A confidential, judgement-free space to explore who you are, what you really want, and how to make sense of it all — with someone walking alongside you.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
@@ -34,7 +34,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:42%"><!-- wp:group {"className":"tgr-hero-art","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-<div class="wp-block-group tgr-hero-art"><!-- wp:site-logo {"width":240,"shouldSyncIcon":false,"className":"tgr-hero-logo"} /--></div>
+<div class="wp-block-group tgr-hero-art"><!-- wp:site-logo {"width":300,"shouldSyncIcon":false,"className":"tgr-hero-logo"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
