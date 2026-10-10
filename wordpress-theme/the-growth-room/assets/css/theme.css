@@ -230,8 +230,12 @@ ul.tgr-pills li {
 .tgr-session .has-large-font-size { max-width: 760px; margin-inline: auto !important; }
 
 /* Booking */
-.tgr-booking { padding: 3rem 2rem; max-width: 1000px; margin-inline: auto !important; }
-.tgr-booking iframe { width: 100%; min-height: 760px; border: 0; }
+.tgr-booking { padding: 1rem; max-width: 1000px; margin-inline: auto !important; overflow: hidden; }
+.tgr-booking iframe { width: 100%; min-height: 700px; border: 0; }
+@media (max-width: 781px) {
+	.tgr-booking { padding: 0; }
+	.tgr-booking .calendly-inline-widget { height: 1000px !important; min-width: 0 !important; }
+}
 
 /* Phones and tablets */
 @media (max-width: 781px) {

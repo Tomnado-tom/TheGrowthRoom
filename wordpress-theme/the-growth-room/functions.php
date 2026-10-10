@@ -71,3 +71,27 @@ function the_growth_room_default_logo( $block_content, $block ) {
 	);
 }
 add_filter( 'render_block_core/site-logo', 'the_growth_room_default_logo', 10, 2 );
+
+/**
+ * Load Calendly's widget script wherever an inline Calendly embed is used.
+ * Loaded from the theme so it still works if WordPress strips <script>
+ * tags from pasted embed code.
+ */
+function the_growth_room_calendly_script() {
+	$post    = get_post();
+	$content = $post ? $post->post_content : '';
+	if ( ! is_front_page() && false === strpos( $content, 'calendly-inline-widget' ) ) {
+		return;
+	}
+	wp_enqueue_script(
+		'calendly-widget',
+		'https://assets.calendly.com/assets/external/widget.js',
+		array(),
+		null,
+		array(
+			'in_footer' => true,
+			'strategy'  => 'async',
+		)
+	);
+}
+add_action( 'wp_enqueue_scripts', 'the_growth_room_calendly_script' );

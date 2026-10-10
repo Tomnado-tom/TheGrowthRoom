@@ -32,12 +32,22 @@ Inside the editor the logo spots may show an empty "Site Logo" box until a logo 
 
 Sections are listed in the **List View** (the ☰ icon top left) as *About Me*, *What is Transformative Coaching?*, *What to Expect*, *Pricing*, *Booking* and *Contact*, so they're easy to find, reorder or delete.
 
-## 5. Add booking + payments (Calendly)
+## 5. Booking (Calendly)
 
-1. Set up Calendly with Stripe or PayPal payments (see `SETUP.md`, section 5).
-2. In the Site Editor, open the **Booking** section and select the white card titled *"Booking calendar — replace with Calendly block"*.
-3. Delete the two lines inside it, click **+**, search **Calendly**, and paste your Calendly link. WordPress.com includes the Calendly block on paid plans.
-4. Save.
+The Booking section already shows the Calendly calendar for `calendly.com/cecily_therese`, and the theme loads Calendly's script itself.
+
+If you've already saved your own version of the home page in the editor, the update won't replace your saved Booking section. Either reset the template (Appearance → Editor → Templates → Front Page → ⋮ → **Reset**; this also clears any other edits on that page), or add it by hand:
+
+1. Select the white card in the Booking section, delete what's inside it, click **+** and add a **Custom HTML** block.
+2. Paste just this one line (no `<script>` needed, the theme adds it):
+
+   ```html
+   <div class="calendly-inline-widget" data-url="https://calendly.com/cecily_therese?hide_gdpr_banner=1&primary_color=004aad" style="min-width:300px;height:700px;"></div>
+   ```
+
+3. Save, then check the live page (the calendar only appears on the live site and in Preview, not inside the editor).
+
+Free Calendly doesn't take payments; the Standard plan adds Stripe/PayPal.
 
 ## 6. Extra pages
 
