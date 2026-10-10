@@ -96,7 +96,7 @@ function the_growth_room_calendly_script() {
 	// Grow or shrink the calendar to fit each Calendly step (no inner scroll bar).
 	wp_add_inline_script(
 		'calendly-widget',
-		"window.addEventListener('message',function(e){if(!/^https:\\/\\/([a-z0-9-]+\\.)?calendly\\.com$/.test(e.origin))return;var d=e.data;if(!d||d.event!=='calendly.page_height'||!d.payload)return;var h=parseInt(d.payload.height,10);if(!h)return;document.querySelectorAll('.calendly-inline-widget').forEach(function(w){w.style.height=(h+10)+'px';});});",
+		"window.addEventListener('message',function(e){if(!/^https:\\/\\/([a-z0-9-]+\\.)?calendly\\.com$/.test(e.origin))return;var d=e.data;if(!d||d.event!=='calendly.page_height'||!d.payload)return;var h=parseInt(d.payload.height,10);if(!h||h<500)return;document.querySelectorAll('.calendly-inline-widget').forEach(function(w){w.style.height=(h+10)+'px';});});",
 		'before'
 	);
 }

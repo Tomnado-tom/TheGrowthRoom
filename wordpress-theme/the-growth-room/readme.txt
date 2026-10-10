@@ -18,6 +18,9 @@ Fonts:
 
 == Changelog ==
 
+= 1.1.2 =
+* Fix: the Calendly calendar could collapse to an empty bar when moving to the next step.
+
 = 1.1.1 =
 * Calendly calendar resizes to fit each booking step, so there's no inner scroll bar.
 
