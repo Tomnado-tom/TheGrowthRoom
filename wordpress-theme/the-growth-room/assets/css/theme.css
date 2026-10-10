@@ -69,6 +69,8 @@ h1 em, h2 em {
 	width: 100%;
 	max-width: 480px;
 	margin-inline: auto;
+	isolation: isolate;
+	background: var(--wp--preset--color--cream);
 }
 .tgr-hero-art::before,
 .tgr-hero-art::after {
@@ -76,6 +78,7 @@ h1 em, h2 em {
 	position: absolute;
 	border-radius: 46% 54% 58% 42% / 44% 40% 60% 56%;
 	animation: tgr-float 14s ease-in-out infinite;
+	z-index: -1;
 }
 .tgr-hero-art::before { inset: 4%; background: var(--wp--preset--color--peach); }
 .tgr-hero-art::after {
@@ -84,8 +87,10 @@ h1 em, h2 em {
 	animation-duration: 18s;
 	animation-delay: -6s;
 }
-.tgr-hero-art > * { position: relative; z-index: 1; }
-.tgr-hero-logo img { filter: drop-shadow(0 14px 22px rgba(58, 51, 46, 0.15)); }
+.tgr-hero-logo img { height: auto; }
+
+/* Lets a logo saved with a white background blend into the page */
+.wp-block-site-logo img { mix-blend-mode: multiply; }
 
 @keyframes tgr-float {
 	0%, 100% { transform: rotate(0deg) scale(1); border-radius: 46% 54% 58% 42% / 44% 40% 60% 56%; }
