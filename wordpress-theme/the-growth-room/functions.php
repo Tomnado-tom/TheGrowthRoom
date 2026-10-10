@@ -95,3 +95,45 @@ function the_growth_room_calendly_script() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'the_growth_room_calendly_script' );
+
+/**
+ * The Calendly scheduling page shown in the Booking section.
+ *
+ * @return string
+ */
+function the_growth_room_calendly_url() {
+	return apply_filters( 'the_growth_room_calendly_url', 'https://calendly.com/cecily_therese' );
+}
+
+/**
+ * Put the Calendly calendar into the Booking card even when the home page
+ * was saved in the Site Editor before the calendar was added to the theme.
+ *
+ * @param string $block_content Rendered block.
+ * @param array  $block         Parsed block.
+ * @return string
+ */
+function the_growth_room_booking_calendar( $block_content, $block ) {
+	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+	if ( false === strpos( $class, 'tgr-booking' ) || false !== strpos( $block_content, 'calendly-inline-widget' ) ) {
+		return $block_content;
+	}
+	if ( ! preg_match( '/^(\s*<div\b[^>]*>)(.*)(<\/div>\s*)$/s', $block_content, $parts ) ) {
+		return $block_content;
+	}
+
+	$url    = add_query_arg(
+		array(
+			'hide_gdpr_banner' => '1',
+			'primary_color'    => '004aad',
+		),
+		the_growth_room_calendly_url()
+	);
+	$widget = sprintf(
+		'<div class="calendly-inline-widget" data-url="%s" style="min-width:300px;height:700px;"></div>',
+		esc_url( $url )
+	);
+
+	return $parts[1] . $widget . $parts[3];
+}
+add_filter( 'render_block_core/group', 'the_growth_room_booking_calendar', 10, 2 );
