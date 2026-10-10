@@ -112,6 +112,7 @@ h1 em, h2 em {
 	object-fit: cover;
 	border-radius: 200px 200px 22px 22px;
 	box-shadow: var(--wp--preset--shadow--soft);
+	background: linear-gradient(180deg, var(--wp--preset--color--peach) 0%, #fbd3b8 100%);
 }
 
 /* Credential pills */

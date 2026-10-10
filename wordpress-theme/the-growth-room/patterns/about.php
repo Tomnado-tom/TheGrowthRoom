@@ -10,7 +10,7 @@
 <section id="about" class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"align":"wide","className":"tgr-about","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns alignwide tgr-about"><!-- wp:column {"width":"42%","className":"tgr-about-photo"} -->
 <div class="wp-block-column tgr-about-photo" style="flex-basis:42%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"tgr-headshot"} -->
-<figure class="wp-block-image size-full tgr-headshot"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/headshot.jpg' ) ); ?>" alt="Smiling portrait of The Growth Room’s coach"/></figure>
+<figure class="wp-block-image size-full tgr-headshot"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/headshot.webp' ) ); ?>" alt="Smiling portrait of The Growth Room’s coach"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
