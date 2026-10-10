@@ -42,7 +42,7 @@ If you've already saved your own version of the home page in the editor, the upd
 2. Paste just this one line (no `<script>` needed, the theme adds it):
 
    ```html
-   <div class="calendly-inline-widget" data-url="https://calendly.com/cecily_therese?hide_gdpr_banner=1&primary_color=004aad" style="min-width:300px;height:700px;"></div>
+   <div class="calendly-inline-widget" data-url="https://calendly.com/cecily_therese?hide_gdpr_banner=1&primary_color=004aad" data-resize="true" style="min-width:300px;height:700px;"></div>
    ```
 
 3. Save, then check the live page (the calendar only appears on the live site and in Preview, not inside the editor).

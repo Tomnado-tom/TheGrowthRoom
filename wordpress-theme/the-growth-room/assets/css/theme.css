@@ -231,10 +231,11 @@ ul.tgr-pills li {
 
 /* Booking */
 .tgr-booking { padding: 1rem; max-width: 1000px; margin-inline: auto !important; overflow: hidden; }
-.tgr-booking iframe { width: 100%; min-height: 700px; border: 0; }
+.tgr-booking .calendly-inline-widget { transition: height 0.2s ease; }
+.tgr-booking iframe { width: 100%; height: 100%; border: 0; }
 @media (max-width: 781px) {
 	.tgr-booking { padding: 0; }
-	.tgr-booking .calendly-inline-widget { height: 1000px !important; min-width: 0 !important; }
+	.tgr-booking .calendly-inline-widget { min-width: 0 !important; }
 }
 
 /* Phones and tablets */

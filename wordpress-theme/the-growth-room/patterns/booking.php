@@ -21,7 +21,7 @@
 
 <!-- wp:group {"metadata":{"name":"Booking calendar"},"align":"wide","className":"tgr-card tgr-booking","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide tgr-card tgr-booking has-white-background-color has-background" style="margin-top:var(--wp--preset--spacing--60)"><!-- wp:html -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/cecily_therese?hide_gdpr_banner=1&amp;primary_color=004aad" style="min-width:300px;height:700px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/cecily_therese?hide_gdpr_banner=1&amp;primary_color=004aad" data-resize="true" style="min-width:300px;height:700px;"></div>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 

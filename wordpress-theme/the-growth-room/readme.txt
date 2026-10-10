@@ -18,6 +18,9 @@ Fonts:
 
 == Changelog ==
 
+= 1.1.1 =
+* Calendly calendar resizes to fit each booking step, so there's no inner scroll bar.
+
 = 1.1.0 =
 * Booking section shows the Calendly calendar, including on home pages already saved in the Site Editor.
 * Coach's story, headshot (pink background removed) and logo added.
