@@ -82,12 +82,13 @@ h1 em, h2 em {
 }
 .tgr-hero-art::before { inset: 4%; background: var(--wp--preset--color--peach); }
 .tgr-hero-art::after {
-	inset: 16% 10% 8% 18%;
+	inset: 13%;
 	background: var(--wp--preset--color--sky);
 	animation-duration: 18s;
 	animation-delay: -6s;
 }
-.tgr-hero-logo img { height: auto; }
+.tgr-hero-art .wp-block-site-logo { width: 58%; }
+.tgr-hero-art .wp-block-site-logo img { width: 100% !important; height: auto; }
 
 /* Lets a logo saved with a white background blend into the page */
 .wp-block-site-logo img { mix-blend-mode: multiply; }
