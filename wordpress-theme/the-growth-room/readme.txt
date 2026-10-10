@@ -15,3 +15,15 @@ The Growth Room theme, (C) 2026 The Growth Room. Licensed under the GPLv2 or lat
 Fonts:
 * Fraunces, (C) The Fraunces Project Authors. SIL Open Font License 1.1. https://github.com/undercasetype/Fraunces
 * DM Sans, (C) The DM Sans Project Authors. SIL Open Font License 1.1. https://github.com/googlefonts/dm-fonts
+
+== Changelog ==
+
+= 1.1.0 =
+* Booking section shows the Calendly calendar, including on home pages already saved in the Site Editor.
+* Coach's story, headshot (pink background removed) and logo added.
+* Colours updated to match the logo.
+* Larger header logo; welcome-section logo centred in its circle.
+* White logo backgrounds blend into the page.
+
+= 1.0.0 =
+* First release.
