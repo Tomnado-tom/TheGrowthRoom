@@ -18,6 +18,10 @@ Fonts:
 
 == Changelog ==
 
+= 1.1.3 =
+* Fix: the phone menu only showed "About"; it now opens full screen with every link.
+* "Book a Session" added to the phone menu.
+
 = 1.1.2 =
 * Fix: the Calendly calendar could collapse to an empty bar when moving to the next step.
 
