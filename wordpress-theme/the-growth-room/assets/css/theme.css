@@ -11,20 +11,10 @@ body { -webkit-font-smoothing: antialiased; }
 	z-index: 50;
 }
 .tgr-header {
-	position: relative;
-	background-color: transparent !important;
+	/* Solid colour, not backdrop-filter: a backdrop-filter here would trap the
+	   full-screen phone menu inside the header. */
+	background-color: var(--wp--preset--color--cream) !important;
 	box-shadow: 0 6px 24px -20px rgba(58, 51, 46, 0.5);
-}
-/* Frosted background lives on a pseudo-element: a backdrop-filter on the
-   header itself would trap the full-screen mobile menu inside the header. */
-.tgr-header::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	z-index: -1;
-	background-color: rgba(248, 242, 234, 0.9);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
 }
 .wp-block-navigation a:where(:not(.wp-element-button)) { position: relative; }
 .wp-block-navigation .wp-block-navigation-item__content::after {
@@ -52,6 +42,21 @@ body { -webkit-font-smoothing: antialiased; }
 	font-weight: 600;
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content { font-size: 1.25rem; }
+
+/* Keep the logo top-left (same spot as the header) while the phone menu is open */
+.wp-block-navigation__responsive-container.is-menu-open::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 20px;
+	width: 150px;
+	height: 88px;
+	background: url("../images/logo.png") no-repeat left top / contain;
+	pointer-events: none;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-close { position: relative; }
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close { top: 32px; }
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content { padding-top: 120px !important; }
 
 /* Buttons */
 .wp-element-button,

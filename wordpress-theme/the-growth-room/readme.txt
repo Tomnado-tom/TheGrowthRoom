@@ -18,6 +18,10 @@ Fonts:
 
 == Changelog ==
 
+= 1.1.4 =
+* Logo stays top-left while the phone menu is open; close button lines up with the menu button.
+* Header background is now solid cream (more reliable on phones than the frosted effect).
+
 = 1.1.3 =
 * Fix: the phone menu only showed "About"; it now opens full screen with every link.
 * "Book a Session" added to the phone menu.
