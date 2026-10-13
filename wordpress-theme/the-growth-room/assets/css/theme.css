@@ -290,3 +290,82 @@ ul.tgr-pills li {
 	html { scroll-behavior: auto; }
 	.tgr-hero-art::before, .tgr-hero-art::after { animation: none; }
 }
+
+/* ------------------------------------------------------------------
+   Dark mode: only applies when the visitor's device is set to dark.
+   Colour presets are remapped, then the few places where one preset
+   is used both as a background and as a text colour are fixed up.
+   ------------------------------------------------------------------ */
+:root { color-scheme: light dark; }
+
+@media (prefers-color-scheme: dark) {
+	:root,
+	body {
+		--wp--preset--color--cream: #121826;
+		--wp--preset--color--white: #1b2233;
+		--wp--preset--color--sand: #1d2536;
+		--wp--preset--color--ink: #e9e6ef;
+		--wp--preset--color--muted: #aab2c3;
+		--wp--preset--color--navy: #f2eee8;
+		--wp--preset--color--primary: #8fb6ff;
+		--wp--preset--color--primary-dark: #b7cfff;
+		--wp--preset--color--accent-dark: #ffa774;
+		--wp--preset--color--peach: #3a2a22;
+		--wp--preset--color--sky: #1f2d47;
+		--wp--preset--color--pink: #3a2436;
+	}
+
+	/* Presets used as text on dark sections */
+	.has-cream-color { color: #f2eee8 !important; }
+	.has-sand-color { color: #cfd6e4 !important; }
+	/* "Navy" sections (What to Expect, footer) stay deep, not light */
+	.has-navy-background-color { background-color: #0b1120 !important; }
+
+	/* Links inside the deep sections (footer site name) */
+	.has-navy-background-color a:where(:not(.wp-element-button)) { color: #f2eee8 !important; }
+
+	/* Filled buttons: keep a solid blue with white text */
+	.wp-element-button,
+	.wp-block-button__link {
+		background-color: #2f6fe0;
+		border-color: #2f6fe0;
+		color: #ffffff;
+	}
+	.wp-block-button__link:hover,
+	.wp-element-button:hover {
+		background-color: #2259c4;
+		border-color: #2259c4;
+		color: #ffffff;
+	}
+	.wp-block-button.is-style-outline > .wp-block-button__link {
+		background-color: transparent;
+		border-color: #8fb6ff;
+		color: #8fb6ff;
+	}
+	.wp-block-button.is-style-outline > .wp-block-button__link:hover {
+		background-color: #2f6fe0;
+		border-color: #2f6fe0;
+		color: #ffffff;
+	}
+	.wp-block-navigation__responsive-container.is-menu-open .tgr-nav-book a {
+		background: #2f6fe0;
+		color: #ffffff !important;
+	}
+
+	.tgr-header { box-shadow: 0 6px 24px -18px rgba(0, 0, 0, 0.8); }
+	.wp-block-site-logo img { mix-blend-mode: normal; }
+	.wp-block-navigation__responsive-container.is-menu-open::before {
+		background-image: url("../images/logo-dark.png");
+	}
+
+	.tgr-card { box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.7); }
+	.tgr-headshot img {
+		background: linear-gradient(180deg, #3a2a22 0%, #4a3428 100%);
+		box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+	}
+	ul.tgr-pills li { border-color: #2c3549; }
+	.tgr-step { border-top-color: rgba(242, 238, 232, 0.18); }
+	.tgr-badge { background: #b24d14; color: #ffffff; }
+	/* Calendly's calendar is always light, so give it a light frame */
+	.tgr-booking { background-color: #ffffff !important; }
+}

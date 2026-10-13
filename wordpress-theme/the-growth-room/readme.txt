@@ -18,6 +18,10 @@ Fonts:
 
 == Changelog ==
 
+= 1.2.0 =
+* Dark mode: when a visitor's device is set to dark, the site uses its own dark colours and a light-lettered logo. Light mode is unchanged.
+* Browsers are told the site has its own dark design, so they no longer auto-darken it.
+
 = 1.1.5 =
 * The calendar is now added above your own text in the Booking card instead of replacing it.
 * Built-in contact email is thegrowthroomcoach@gmail.com.

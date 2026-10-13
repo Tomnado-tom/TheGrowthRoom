@@ -144,3 +144,29 @@ function the_growth_room_booking_calendar( $block_content, $block ) {
 	return $parts[1] . $widget . $parts[2] . $parts[3];
 }
 add_filter( 'render_block_core/group', 'the_growth_room_booking_calendar', 10, 2 );
+
+/**
+ * Swap in the light-lettered logo when the visitor uses dark mode.
+ *
+ * @param string $block_content Rendered block.
+ * @return string
+ */
+function the_growth_room_dark_logo( $block_content ) {
+	if ( false === strpos( $block_content, '<img' ) || false !== strpos( $block_content, '<picture' ) ) {
+		return $block_content;
+	}
+	$source = sprintf(
+		'<picture><source media="(prefers-color-scheme: dark)" srcset="%s">',
+		esc_url( get_theme_file_uri( 'assets/images/logo-dark.png' ) )
+	);
+	return preg_replace( '/(<img\b[^>]*>)/', $source . '$1</picture>', $block_content, 1 );
+}
+add_filter( 'render_block_core/site-logo', 'the_growth_room_dark_logo', 20 );
+
+/**
+ * Tell browsers the site has its own dark colours, so they don't auto-darken it.
+ */
+function the_growth_room_color_scheme_meta() {
+	echo '<meta name="color-scheme" content="light dark">' . "\n";
+}
+add_action( 'wp_head', 'the_growth_room_color_scheme_meta', 1 );
