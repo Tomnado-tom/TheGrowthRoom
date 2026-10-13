@@ -26,6 +26,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"center","textColor":"muted","fontSize":"small","style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-<p class="has-text-align-center has-muted-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--40)">Can’t see a time that works? Email <a href="mailto:hello@thegrowthroom.coach">hello@thegrowthroom.coach</a> and we’ll find one.</p>
+<p class="has-text-align-center has-muted-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--40)">Can’t see a time that works? Email <a href="mailto:thegrowthroomcoach@gmail.com">thegrowthroomcoach@gmail.com</a> and we’ll find one.</p>
 <!-- /wp:paragraph --></section>
 <!-- /wp:group -->

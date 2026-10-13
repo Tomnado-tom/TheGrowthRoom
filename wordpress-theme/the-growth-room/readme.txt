@@ -18,6 +18,11 @@ Fonts:
 
 == Changelog ==
 
+= 1.1.5 =
+* The calendar is now added above your own text in the Booking card instead of replacing it.
+* Built-in contact email is thegrowthroomcoach@gmail.com.
+* Empty tags under About Me are hidden.
+
 = 1.1.4 =
 * Logo stays top-left while the phone menu is open; close button lines up with the menu button.
 * Header background is now solid cream (more reliable on phones than the frosted effect).

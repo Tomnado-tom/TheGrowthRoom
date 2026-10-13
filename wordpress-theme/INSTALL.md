@@ -27,7 +27,7 @@ Inside the editor the logo spots may show an empty "Site Logo" box until a logo 
 
 - **Pricing:** change `£[XX]` and `£[XXX]`, and check the session lengths (20 min / 60 min).
 - **Photo:** to change it later, click the headshot → **Replace**.
-- **Email address:** the booking and contact sections use `hello@thegrowthroom.coach`. Select the link/button and change it if your address is different. (That mailbox must exist — see email note below.)
+- **Email address:** the booking and contact sections use `thegrowthroomcoach@gmail.com`. Select the link/button and change it if your address is different. (That mailbox must exist — see email note below.)
 - Click **Save** (top right) when done.
 
 Sections are listed in the **List View** (the ☰ icon top left) as *About Me*, *What is Transformative Coaching?*, *What to Expect*, *Pricing*, *Booking* and *Contact*, so they're easy to find, reorder or delete.
@@ -59,4 +59,4 @@ Create a page normally (Pages → Add New). For a full-width page that uses the 
 
 ## Email note
 
-There's currently no MX record on thegrowthroom.coach, so no address on the domain receives mail yet. In WordPress.com go to **Upgrades → Emails** to add Professional Email or free **email forwarding** (e.g. hello@thegrowthroom.coach → your personal inbox).
+There's currently no MX record on thegrowthroom.coach, so no address on the domain receives mail yet. In WordPress.com go to **Upgrades → Emails** to add Professional Email or free **email forwarding** (e.g. thegrowthroomcoach@gmail.com → your personal inbox).

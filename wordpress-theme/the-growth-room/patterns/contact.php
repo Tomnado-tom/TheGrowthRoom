@@ -17,7 +17,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:hello@thegrowthroom.coach">Get in touch</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:thegrowthroomcoach@gmail.com">Get in touch</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->

@@ -159,6 +159,8 @@ ul.tgr-pills {
 	flex-wrap: wrap;
 	gap: 0.6rem;
 }
+ul.tgr-pills:not(:has(li:not(:empty))) { display: none; }
+ul.tgr-pills li:empty { display: none; }
 ul.tgr-pills li {
 	background: var(--wp--preset--color--cream);
 	border: 1px solid var(--wp--preset--color--sand);

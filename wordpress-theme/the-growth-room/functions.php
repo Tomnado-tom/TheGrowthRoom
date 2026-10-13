@@ -112,7 +112,7 @@ function the_growth_room_calendly_url() {
 }
 
 /**
- * Put the Calendly calendar into the Booking card even when the home page
+ * Add the Calendly calendar to the Booking card even when the home page
  * was saved in the Site Editor before the calendar was added to the theme.
  *
  * @param string $block_content Rendered block.
@@ -140,6 +140,7 @@ function the_growth_room_booking_calendar( $block_content, $block ) {
 		esc_url( $url )
 	);
 
-	return $parts[1] . $widget . $parts[3];
+	// Add the calendar above whatever is already in the card; never remove the owner's text.
+	return $parts[1] . $widget . $parts[2] . $parts[3];
 }
 add_filter( 'render_block_core/group', 'the_growth_room_booking_calendar', 10, 2 );
